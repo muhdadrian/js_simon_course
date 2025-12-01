@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>9b</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <input
+      placeholder="Name"
+      class="js-input"
+      onkeydown="
+      if(event.key === 'Enter') { const inputElement = document.querySelector('.js-input');
+    document.querySelector('.js-message').innerHTML = `Your name is: ${inputElement.value}`}
+      "
+    />
+
+    <button
+      onclick="
+    const inputElement = document.querySelector('.js-input');
+    document.querySelector('.js-message').innerHTML = `Your name is: ${inputElement.value}`
+    "
+    >
+      Submit
+    </button>
+    <p class="js-message"></p>
+    <script></script>
+  </body>
+</html>
